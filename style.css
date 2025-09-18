@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #39297b;
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    margin: 100px auto 50px auto;
+    font-weight: 600;
+}
+
+#search-form{
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    height: 60px;
+    background-color: #434989;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+}
+
+#search-form input{
+    flex: 1;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    padding: 0 30px;
+}
+
+input::placeholder{
+    color: #c7bdbd;
+}
+
+#search-form button{
+    padding: 0 40px;
+    background-color: #ff3929;
+    color: white;
+    font-size: 18px;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;
+}
+
+#submit:hover{
+    background-color: #e6362a;
+}
+
+#show-more-btn{
+    background-color: #ff3929;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    margin: 10px auto 100px auto;
+    padding: 10px 20px;
+    border-radius: 4px;
+    display: none;
+    /* display: block; */
+}
+
+#show-more-btn:hover{
+    background-color: #e6362a;
+}
+
+#search-result{
+    column-count: 5;
+    column-gap: 25px;
+    margin-top: 20px;
+    padding: 50px;
+}
+
+
+.img-box{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.img-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.img-box img:hover {
+  transform: scale(1.08);
+}
+
+@media (max-width: 1200px) {
+    #search-result{
+        column-count: 4;
+    }
+}
+@media (max-width: 900px) {
+    #search-result{
+        column-count: 3;
+        padding: 20px;
+    }
+}
+@media (max-width: 600px) {
+    #search-result{
+        column-count: 2;
+    }
+}
+@media (max-width: 400px) {
+    #search-result{
+        column-count: 1;
+    }
+}
