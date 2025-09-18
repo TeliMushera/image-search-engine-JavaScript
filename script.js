@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let keyword = "";
   let page = 1;
-  const accessKey = "9p-sXAPc_zkbESwy4j1teKtg49AOKs0Hb_7o654pdtw";
+  const accessKey = "YOUR_UNSPLASH_API_KEY";
 
 //   function to fetch images from Unsplash API
   async function searchImages() {
@@ -69,3 +69,4 @@ document.addEventListener("DOMContentLoaded", () => {
     searchImages();
   });
 });
+
